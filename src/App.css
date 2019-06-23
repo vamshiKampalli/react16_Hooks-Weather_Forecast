@@ -1,0 +1,69 @@
+.container{
+  margin: 0 auto;
+  width: 70%;
+}
+
+.selected-forecast ul li, .fivedays-forecast ul li{
+  list-style: none;
+}
+
+.fivedays-forecast ul{
+  padding: 20px;
+  margin: 10px;
+}
+
+.climate-decsription{
+  text-transform: capitalize;
+}
+
+.fivedays-forecast{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-group{
+  margin-left: 20px;
+  position: relative;
+}
+
+.icon{
+  width: 80px;
+}
+
+.temperature-text{
+  position: absolute;
+  top: 16px;
+  font-size: 30px;
+}
+
+.temp-farenheit, .temp-celsius{
+  left: 130px;
+  top: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.temp-farenheit{
+  left:150px;
+  border-left: 1px solid;
+  padding-left: 3px;
+}
+.unit--active{
+  font-weight: bold;
+}
+.unit--not-active{
+  color: blue;
+}
+
+.min-temp::after, .max-temp::after{
+  content: "\00b0"
+}
+
+.min-temp, .max-temp{
+  display: inline-block;
+  margin-right: 5px
+}
+
+.active-day{
+  background-color: #03a9f41a;
+}
